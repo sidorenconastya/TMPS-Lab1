@@ -1,5 +1,9 @@
 package insurance_factory;
 
-public class RcaFactory {
-
+public class RcaFactory implements InsuranceFactoryInterface {
+	private RcaFactory() {}
+	@Override
+	public InsuranceInterface createInsurance(){
+		return new Rca();
+	}
 }
